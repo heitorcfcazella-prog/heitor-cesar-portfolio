@@ -507,18 +507,12 @@ footer a:active {
 
 @media (min-width: 768px) {
   :root {
-    --font-size-title: 5rem;
-    /* 80px */
-    --font-size-header: 3.125rem;
-    /* 50px */
-    --font-size-link: 4rem;
-    /* 64px */
-    --font-size-subtitle: 2.25rem;
-    /* 36px */
-    --font-size-body: 1.65rem;
-    /* 24px */
-    --line-height-body: 2rem;
-    /* 32px (A fração 24/32 representa tamanho/altura da linha) */
+    --font-size-title: 3rem;       /* 48px - Títulos das seções */
+    --font-size-header: 2.25rem;   /* 36px */
+    --font-size-link: 2rem;        /* 32px */
+    --font-size-subtitle: 1.5rem;  /* 24px - Subtítulos */
+    --font-size-body: 1.125rem;    /* 18px - Leitura confortável */
+    --line-height-body: 1.75rem;   /* 28px - Altura de linha ajustada */
   }
 
   body {
@@ -638,7 +632,7 @@ footer a:active {
   .timeline-item {
     position: relative;
     width: 50%;
-    margin-left: 0;
+    margin-left: 20px;
     margin-right: auto;
     padding-right: 40px;
     text-align: center;
@@ -652,7 +646,7 @@ footer a:active {
   .timeline-item .circle {
     position: absolute;
     top: 50%;
-    right: -40px;
+    right: -20px;
     left: auto;
     transform: translate(50%, -50%);
   }
