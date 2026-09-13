@@ -507,12 +507,12 @@ footer a:active {
 
 @media (min-width: 768px) {
   :root {
-    --font-size-title: 3rem;       /* 48px - Títulos das seções */
-    --font-size-header: 2.25rem;   /* 36px */
-    --font-size-link: 2rem;        /* 32px */
-    --font-size-subtitle: 1.5rem;  /* 24px - Subtítulos */
-    --font-size-body: 1.125rem;    /* 18px - Leitura confortável */
-    --line-height-body: 1.75rem;   /* 28px - Altura de linha ajustada */
+    --font-size-title: 4rem;
+    --font-size-header: 2.75rem;
+    --font-size-link: 3rem;
+    --font-size-subtitle: 1.8rem;
+    --font-size-body: 1.4rem;
+    --line-height-body: 1.75rem;
   }
 
   body {
