@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Heitor César Dev</title>
+</head>
+
+<body>
+  <div class="page-wrapper">
+    <div class="diagonal-background"></div>
+
+    <div class="conteudo">
+      <header>
+        <div class="logo">
+          <span class="nome">Heitor César </span><span class="texto-dev">Dev</span>
+        </div>
+
+        <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Alternar tema">
+          <img src="./assets/sun.svg" alt="Ícone de Sol" class="icon-sun">
+          <img src="./assets/moon.svg" alt="Ícone de Lua" class="icon-moon">
+        </button>
+
+        <details class="menu-container">
+          <summary class="hamburger-btn">☰</summary>
+          <nav class="nav-links">
+            <a href="#sobre-mim" onclick="fecharMenu()">Sobre Mim</a>
+            <a href="#formacoes" onclick="fecharMenu()">Formações</a>
+            <a href="#portfolio" onclick="fecharMenu()">Portfólio</a>
+            <a href="#idiomas" onclick="fecharMenu()">Idiomas</a>
+            <a href="#contato" onclick="fecharMenu()">Contato</a>
+          </nav>
+        </details>
+
+        <!--Desktop-->
+        <div class="acoes-header">
+          <div class="links-desktop">
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#formacoes">Formações</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#idiomas">Idiomas</a>
+            <a href="#contato">Contato</a>
+          </div>
+
+          <button id="theme-toggle-desktop" class="theme-toggle" aria-label="Alternar tema">
+            <img src="./assets/sun.svg" alt="Ícone de Sol" class="icon-sun">
+            <img src="./assets/moon.svg" alt="Ícone de Lua" class="icon-moon">
+          </button>
+        </div>
+        
+      </header>
+
+      <main>
+        <section id="sobre-mim">
+          <h1>Sobre Mim</h1>
+          <img src="./assets/foto_teste.png" alt="Foto Heitor 2026">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </section>
+
+        <section id="formacoes">
+          <h1>Minhas Formações</h1>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="content">
+                <h2>Desenvolvimento de Sistemas AMS
+                  <span class="circle"></span>
+                </h2>
+                <p class="instituicao">Etec Jorge Street (2025-2027)</p>
+                <p>Base sólida em desenvolvimento web com HTML5, CSS3, JavaScript, conceitos de Design Digital e UX/UI,
+                  fundamentos de programação com Java, além de desenvolvimento backend em PHP integrado a banco de dados
+                  MySQL.</p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <div class="content">
+                <h2>Análise e Desenvolvimento de Sistemas
+                  <span class="circle"></span>
+                </h2>
+                <p class="instituicao">Fatec Antonio Russo (2028-2029)</p>
+                <p>Formação superior focada em Engenharia de Software, Arquitetura de Sistemas e Desenvolvimento
+                  Backend/Frontend. Domínio de Programação Orientada a Objetos, modelagem e consulta em Banco de Dados
+                  Relacional, gestão com Metodologias Ágeis e práticas de Governança de TI.</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="portfolio">
+          <h1>Portfólio Profissional</h1>
+
+          <div class="carousel-block">
+            <h3 class="subtitulo-carrossel">Instituições & Certificações</h3>
+            <div class="carousel-container">
+              <div class="carousel-track track-direita">
+                <!-- Grupo 1 -->
+                <div class="logo-circle">
+                  <img src="./assets/freecodecamp-dark-mode.png" alt="freeCodeCamp" class="fcc-dark-mode">
+                  <img src="./assets/freecodecamp-light-mode.png" alt="freeCodeCamp" class="fcc-light-mode">
+                </div>
+                <div class="logo-circle"><img src="./assets/fund_bradesco.png" alt="Fundação Bradesco"></div>
+                <div class="logo-circle"><img src="./assets/cisco.png" alt="Cisco"></div>
+                <div class="logo-circle"><img src="./assets/cps.png" alt="Centro Paula Souza"></div>
+
+                <!-- Grupo 2 -->
+                <div class="logo-circle">
+                  <img src="./assets/freecodecamp-dark-mode.png" alt="freeCodeCamp" class="fcc-dark-mode">
+                  <img src="./assets/freecodecamp-light-mode.png" alt="freeCodeCamp" class="fcc-light-mode">
+                </div>
+                <div class="logo-circle"><img src="./assets/fund_bradesco.png" alt="Fundação Bradesco"></div>
+                <div class="logo-circle"><img src="./assets/cisco.png" alt="Cisco"></div>
+                <div class="logo-circle"><img src="./assets/cps.png" alt="Centro Paula Souza"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-block">
+            <h3 class="subtitulo-carrossel">Tecnologias & Ferramentas</h3>
+            <div class="carousel-container">
+              <div class="carousel-track track-esquerda">
+                <!-- Grupo 1 -->
+                <div class="logo-circle"><img src="./assets/html.png" alt="HTML"></div>
+                <div class="logo-circle"><img src="./assets/css.png" alt="CSS"></div>
+                <div class="logo-circle"><img src="./assets/javascript.png" alt="JavaScript"></div>
+                <div class="logo-circle"><img src="./assets/php.png" alt="PHP"></div>
+                <div class="logo-circle"><img src="./assets/mysql.png" alt="MySQL"></div>
+                <div class="logo-circle"><img src="./assets/java.png" alt="Java"></div>
+
+                <!-- Grupo 2 -->
+                <div class="logo-circle"><img src="./assets/html.png" alt="HTML"></div>
+                <div class="logo-circle"><img src="./assets/css.png" alt="CSS"></div>
+                <div class="logo-circle"><img src="./assets/javascript.png" alt="JavaScript"></div>
+                <div class="logo-circle"><img src="./assets/php.png" alt="PHP"></div>
+                <div class="logo-circle"><img src="./assets/mysql.png" alt="MySQL"></div>
+                <div class="logo-circle"><img src="./assets/java.png" alt="Java"></div>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="cta-link">Visite Minhas Aplicações</a>
+
+        </section>
+
+        <section id="idiomas">
+          <h1>Idiomas</h1>
+          <div class="linha-idioma">
+            <span class="idioma">Inglês</span>
+            <div class="nivel">
+              <span class="nivel-mobile">B2</span>
+              <span class="nivel-desktop">Intermediário / B2</span>
+            </div>
+          </div>
+          <p class="informacoes-idiomas">Leitura fluente de <span class="negrito">documentação técnica</span>, escrita
+            de <span class="negrito">commits</span> e <span class="negrito">documentações</span>, além de participação
+            em <span class="negrito">reuniões e conversações profissionais</span>.</p>
+
+          <div class="linha-idioma">
+            <span class="idioma">Alemão</span>
+            <div class="nivel">
+              <span class="nivel-mobile">A1</span>
+              <span class="nivel-desktop">Básico / A1</span>
+            </div>
+          </div>
+          <p class="informacoes-idiomas">Compreensão de <span class="negrito">vocabulário técnico básico</span>,
+            estruturas gramaticais fundamentais e leitura de <span class="negrito">textos simples</span>.</p>
+        </section>
+
+        <section id="contato">
+          <h1>Contato</h1>
+          <div class="linkedin">
+            <img src="./assets/linkedin.png" alt="Logo LinkedIn">
+            <a href="https://www.linkedin.com/in/heitor-c%C3%A9sar-f-cazella-correa-69b5bb371" target="_blank"
+              class="links">LinkedIn</a>
+          </div>
+          <div class="github">
+            <img src="./assets/github.png" alt="Logo GitHub">
+            <a href="https://github.com/heitorcfcazella-prog" target="_blank" class="github-texto">GitHub</a>
+          </div>
+          <div class="email">
+            <img src="./assets/gmail.png" alt="Logo Gmail">
+            <a href="mailto:heitorcfcazella@gmail.com" onclick="copiarEmail(event, 'heitorcfcazella@gmail.com')" class="email-mobile">Copiar <br>E-Mail</a>
+            <a href="mailto:heitorcfcazella@gmail.com" onclick="copiarEmail(event, 'heitorcfcazella@gmail.com')" class="email-desktop">heitorcfcazella@gmail.com</a>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="logo-footer">
+          <span class="nome">Heitor César </span><span class="texto-dev">Dev</span>
+        </div>
+        <div class="container-links">
+          <div class="links-esquerda">
+            <a href="#sobre-mim">Sobre Mim</a>
+            <a href="#formacoes">Formações</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#idiomas">Idiomas</a>
+          </div>
+
+          <div class="links-direita">
+            <a href="https://github.com/heitorcfcazella-prog" target="_blank" class="github-texto">GitHub</a>
+            <a href="https://www.linkedin.com/in/heitor-c%C3%A9sar-f-cazella-correa-69b5bb371" target="_blank"
+              class="links">LinkedIn</a>
+            <!-- Antes: href="#" -->
+            <a href="mailto:heitorcfcazella@gmail.com" onclick="copiarEmail(event, 'heitorcfcazella@gmail.com')" class="links">E-Mail</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
