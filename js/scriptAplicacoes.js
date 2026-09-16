@@ -1,0 +1,1 @@
+import aplicacoes from '../assets/aplicacoes.json' with { type:"json" };
