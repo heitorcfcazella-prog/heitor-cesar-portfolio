@@ -12,6 +12,52 @@
   <title>Heitor César Dev - Aplicações</title>
 </head>
 <body>
+  <div class="page-wrapper">
+    <div class="diagonal-background"></div>
+
+    <div class="conteudo">
+      <header>
+        <div class="logo">
+          <span class="nome">Heitor César </span><span class="texto-dev">Dev</span>
+        </div>
+
+        <button id="theme-toggle-mobile" class="theme-toggle" aria-label="Alternar tema">
+          <img src="./assets/sun.svg" alt="Ícone de Sol" class="icon-sun">
+          <img src="./assets/moon.svg" alt="Ícone de Lua" class="icon-moon">
+        </button>
+
+        <details class="menu-container">
+          <summary class="hamburger-btn">☰</summary>
+            <nav class="nav-links">
+              <a href="index.html" onclick="fecharMenu()">Sobre Mim</a>
+              <a href="#html-css-js" onclick="fecharMenu()">HTML-CSS-JS</a>
+              <a href="#php" onclick="fecharMenu()">PHP</a>
+            </nav>
+        </details>
+
+        <div class="acoes-header">
+          <nav>
+            <div class="links-desktop">
+              <a href="index.html">Sobre Mim</a>
+              <div class="dropdown">
+                <a href="#" class="dropdown-btn">Linguagens ▾</a>
+                <div class="dropdown-menu">
+                  <a href="#html-css-js">HTML-CSS-JS</a>
+                  <a href="#php">PHP</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+          
+
+          <button id="theme-toggle-desktop" class="theme-toggle" aria-label="Alternar tema">
+            <img src="./assets/sun.svg" alt="Ícone de Sol" class="icon-sun">
+            <img src="./assets/moon.svg" alt="Ícone de Lua" class="icon-moon">
+          </button>
+        </div>
+      </header>
+      
+    </div>
   
   <script src="./js/scriptAplicacoes.js"></script>
 </body>
