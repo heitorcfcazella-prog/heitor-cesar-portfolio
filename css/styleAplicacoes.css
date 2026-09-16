@@ -195,11 +195,77 @@ a {
   border-bottom: 1px solid var(--border);
 }
 
+.card-aplicacoes {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  text-align: center;
+  padding: 2rem 1.5rem;
+  margin: 1.5rem;
+  width: 80%;
+  max-width: 400px;
+  margin: 0 auto 2rem auto;
+}
+
+.card-aplicacoes h2 {
+  font-family: var(--font-title);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 1.25rem;
+}
+
+.card-aplicacoes p {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* Área de Tags estilizada como pílulas */
+.area-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.tags {
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  color: var(--accent);
+  background-color: var(--bg-primary);
+  padding: 0.4rem 1rem;
+  border-radius: 50px;
+}
+
+/* Links no rodapé */
+.area-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.area-links a {
+  font-family: var(--font-code);
+  font-size: 0.95rem;
+  color: var(--accent);
+  transition: color 0.2s ease;
+}
+
+.area-links a:active {
+  color: var(--accent-hover);
+}
+
 
 
 @media (min-width: 768px) {
   :root {
-    --font-size-title: 4rem;
+    --font-size-title: 3rem;
     --font-size-header: 2.75rem;
     --font-size-link: 3rem;
     --font-size-subtitle: 1.8rem;
@@ -209,6 +275,13 @@ a {
 
   body {
     font-size: var(--font-size-body);
+  }
+
+  h1 {
+    font-size: var(--font-size-title);
+    font-weight: normal;
+    text-align: left;
+    padding: 4rem 5%;
   }
 
   /* header */
@@ -260,13 +333,6 @@ a {
     color: var(--accent);
   }
 
-  h1 {
-    font-size: var(--font-size-title);
-    font-weight: normal;
-    text-align: left;
-    padding: 4rem 5%;
-  }
-
   .links-desktop {
     display: flex;
     align-items: center;
@@ -315,5 +381,31 @@ a {
   .dropdown-menu a:hover {
     background-color: var(--border);
     color: var(--accent);
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1600px;
+    margin: 0 auto 0 2rem;
+    padding: 0 1.5rem;
+  }
+
+  .card-aplicacoes {
+    max-width: none;
+    margin: 0;
+  }
+
+  .area-links a{
+    transition: 0.3s ease;
+  }
+
+  .area-links a:hover{
+    color: var(--accent-hover);
+  }
+
+  .area-links a:active{
+    opacity: 0.7;
   }
 }
