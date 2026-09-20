@@ -1,3 +1,17 @@
-{
-  
-}
+[
+  {
+    "id": 1,
+    "titulo": "PokéBiblioteca",
+    "descricao": "Aplicação web que busca e apresenta informações de pokémons utilizando APIs públicas.",
+    "tags": ["HTML", "CSS", "JavaScript", "API"],
+    "github": "https://github.com/heitorcfcazella-prog/PokeBiblioteca.git",
+    "deploy": "https://heitorcfcazella-prog.github.io/PokeBiblioteca/"
+  },
+  {
+    "id": 2,
+    "titulo": "LoanLink",
+    "descricao": "O LoanLink é uma aplicação web desenvolvida em PHP e MySQL para facilitar o empréstimo de itens entre usuários. A plataforma permite cadastrar itens, solicitar empréstimos, aprovar ou recusar solicitações, registrar devoluções e acompanhar o histórico de todas as transações.",
+    "tags": ["HTML", "PHP"],
+    "github": "https://github.com/heitorcfcazella-prog/loanlink.git"
+  }
+]
