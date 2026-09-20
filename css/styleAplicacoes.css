@@ -66,6 +66,11 @@ header{
   border-bottom: 5px solid var(--border);
 }
 
+footer{
+  border-top: 5px solid var(--border);
+  margin-top: 1rem;
+}
+
 a {
   text-decoration: none;
 }
@@ -261,6 +266,38 @@ a {
   color: var(--accent-hover);
 }
 
+.logo-footer {
+  text-align: center;
+  margin: 5% 0 10% 0;
+}
+
+.container-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.links-esquerda,
+.links-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+footer a {
+  color: var(--text-main);
+  line-height: 1.5;
+  display: block;
+  transition: 0.3s ease;
+}
+
+footer a:active {
+  color: var(--accent-hover);
+}
+
 
 
 @media (min-width: 768px) {
@@ -407,5 +444,37 @@ a {
 
   .area-links a:active{
     opacity: 0.7;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 8%; /* Mantém o alinhamento com o resto do site */
+  }
+
+  .logo-footer {
+    text-align: left;
+    margin: 0;
+    font-size: var(--font-size-subtitle); /* Aumenta o tamanho da logo no desktop */
+  }
+
+  .container-links {
+    width: auto;
+    margin-bottom: 0;
+    gap: 4rem; /* Distância entre a coluna da esquerda e a da direita */
+  }
+
+  .links-esquerda,
+  .links-direita {
+    gap: 0.5rem;
+  }
+
+  footer a {
+    font-size: var(--font-size-body);
+  }
+
+  footer a:hover{
+    color: var(--accent-hover);
   }
 }
